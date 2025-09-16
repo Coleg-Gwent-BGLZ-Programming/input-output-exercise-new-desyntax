@@ -9,7 +9,7 @@ name = input("What's your name? ")
 quantity = input("How many smoothies would you like to buy?")
 
 # TODO: Convert the number of smoothies to an integer
-int(quantity)
+quantity = int(quantity)
 
 # TODO: Calculate the total cost (each smoothie costs £3.50)
 cost = quantity * 3.5
@@ -18,7 +18,7 @@ cost = quantity * 3.5
 print("Order total:")
 print(f"Customer name: {name}")
 print(f"Smoothie ({quantity})")
-print(f"The total cost is £{float(cost)}")
+print(f"The total cost is £{round(float(cost), 2)}")
 
 # OPTIONAL CHALLENGE:
 # Ask if the customer wants a reusable cup for £1.00 extra
@@ -26,4 +26,4 @@ print(f"The total cost is £{float(cost)}")
 extra = input("Would you like a reusable cup for £1.00 extra?")
 if(extra == "yes"):
     cost += 1
-    print(f"The new total cost is £{float(cost)}")
+    print(f"The new total cost is £{round(float(cost), 2)}")
