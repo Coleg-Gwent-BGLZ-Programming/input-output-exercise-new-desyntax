@@ -6,7 +6,7 @@ print("Welcome to the Smoothie Shop!")
 name = input("What's your name? ")
 
 # TODO: Ask how many smoothies they want to buy
-quantity = input("How many smoothies would you like to buy?")
+quantity = input("How many smoothies would you like to buy? ")
 
 # TODO: Convert the number of smoothies to an integer
 quantity = int(quantity)
@@ -23,7 +23,7 @@ print(f"The total cost is £{round(float(cost), 2)}")
 # OPTIONAL CHALLENGE:
 # Ask if the customer wants a reusable cup for £1.00 extra
 # Add the cost if they say yes
-extra = input("Would you like a reusable cup for £1.00 extra?")
+extra = input("Would you like a reusable cup for £1.00 extra? ")
 if(extra == "yes"):
     cost += 1
     print(f"The new total cost is £{round(float(cost), 2)}")
